@@ -78,7 +78,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/27/my-new-post/">my new post</a>
+      <a class="article-title" href="/2016/08/27/my-new-post/">利用github and Hexo建立个人blog</a>
     </h1>
   
 
@@ -86,15 +86,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#the first blog for hexo</p>
-<p>在网上学习了使用github\hexo建立个人blog</p>
-<p>#今天是周末，在单位加班。明天是周一，担心宝宝暂时离开妈妈后怎么过好一天。</p>
-<p>事情就像卡尔曼滤波一样，在预测值和实际值之间。<br>思绪乱了。</p>
+        <p>Hexo 是一个快速、简单且功能强大的 Node.js 博客框架，可以方便的生成静态网页托管在github和Heroku上。</p>
+<p>GitHub Pages 可以被认为是用户编写的、托管在github上的静态网页。由于它的空间免费稳定， 可以用于介绍托管在github上的Project或者搭建网站。</p>
+<p>gp 生成的网站的默认域名是 username.github.io 或者 username.github.io/project-name ，但gp是支持自定义域名的： Custom Domain Name 。购买域名之后，可以和默认的二级域名进行绑定</p>
+<ul>
+<li>由于 Hexo 是基于 Node ，安装前要先安装 Node.js。上官网下载安装。</li>
+<li>注册github，建立username.github.io的项目用于管理blog相关资料。</li>
+<li><p>下载安装github for windows,用git shell安装Hexo 有些教程要先CD到根目录，这得看你的github for windows的安装位置，直接启动git shell安装就行了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install  hexo-cli -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>cd到Hexo项目文件夹，在github文件夹下面。运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">hexo server</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这时端口4000被打开了，我们能过浏览器打开地址， <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 或者 <a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a> 。<br>全局配置可以在Hexo的 _config.yml 中修改deploy </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repo: https://github.com/dwqs/username.github.io.git</div><div class="line">branch: master</div><div class="line">然后还要安装 hexo-deployer-git ：</div><div class="line"></div><div class="line">npm install hexo-deployer-git -S</div><div class="line">最后利用hexo指令发布到github：</div><div class="line"></div><div class="line">hexo d</div><div class="line">//same as</div><div class="line">hexo deploy</div><div class="line"></div><div class="line">Hexo常用命令：</div><div class="line"></div><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
+<ul>
+<li>使用hexo n “filename”建立新blog，用Haroopad编辑mark dwon模式的md文件，保存后刷新可看到最新的blog</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/27/my-new-post/" data-id="cisduc4720000vwid93bqr7em" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/27/my-new-post/" data-id="cise0m06e00005gidoxzxryce" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -141,7 +155,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/27/hello-world/" data-id="cisduc4840003vwidokmox8bk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/27/hello-world/" data-id="cise0m06j00015gidaichqd27" class="article-share-link">Share</a>
       
       
     </footer>
@@ -195,7 +209,7 @@
       <ul>
         
           <li>
-            <a href="/2016/08/27/my-new-post/">my new post</a>
+            <a href="/2016/08/27/my-new-post/">利用github and Hexo建立个人blog</a>
           </li>
         
           <li>
